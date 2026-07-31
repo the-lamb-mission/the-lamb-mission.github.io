@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A pixel-style personal portfolio." />
+    <title>Portfolio -- Ian Lam</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="site-viewport">
+      <!-- Update this image path, name, and stat values. -->
+      <aside class="rpg-hud" aria-label="Player status">
+        <div class="rpg-hud__portrait">
+          <img src="images/pfp_HUD.png" alt="The Lamb Mission's avatar" />
+        </div>
+        <div class="rpg-hud__readout">
+          <p class="rpg-hud__name">The_Lamb_Mission</p>
+          <div class="hud-meter">
+            <span class="hud-meter__label">HP</span>
+            <span class="hud-meter__track hud-meter__track--health" role="progressbar" aria-label="Scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></span>
+            <b class="hud-meter__value">0</b>
+          </div>
+        </div>
+      </aside>
+
+      <header class="site-header site-container">
+        <a class="site-brand" href="#character-select">THE.LAMB.MISSION<span>_</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#character-select">INTRO</a>
+          <a href="#quest-board">QUESTS</a>
+          <a href="#find-me">FIND ME</a>
+        </nav>
+      </header>
+
+      <main class="site-container">
+        <!-- Replace the text and image path in this character-selection card. -->
+        <section id="character-select" class="character-select" aria-labelledby="character-title">
+          <div class="character-select__copy">
+            <p class="section-label">01 / CHARACTER SELECTION</p>
+            <h1 id="character-title">Hi, I am <span>Ian</span>.</h1>
+            <p class="intro-text">A CS undergraduate. Welcome!</p>
+            <a class="action-button" href="contact.html">GET IN TOUCH ↗</a>
+          </div>
+
+          <figure class="character-portrait">
+            <!-- Put your image in an images folder and change src to its file name. -->
+            <img src="images/pfp_Intro.png" alt="Portrait of the Lamb" />
+          </figure>
+        </section>
+
+        <section id="quest-board" class="quest-board" aria-labelledby="quest-board-title">
+          <div class="section-header">
+            <p class="section-label">02 / QUEST BOARD</p>
+            <h2 id="quest-board-title">Active Quests</h2>
+          </div>
+
+          <!-- Duplicate a .quest-card to add another project. -->
+          <div class="quest-list">
+            <article class="quest-card quest-card--rose">
+              <div class="quest-card__header"><span class="quest-card__id">QUEST 01</span><span class="quest-card__status">COMPLETE</span></div>
+              <div class="quest-card__content">
+                <div>
+                  <h3>Fitness App (One Device)</h3>
+                  <p>A fitness app, with the purpose of reducing reliant on external devices by using Pose Estimation.</p>
+                </div>
+                <dl class="quest-card__meta">
+                  <div><dt>ROLE</dt><dd>DESIGN + DEV</dd></div>
+                  <div><dt>REWARD</dt><dd>XP +50</dd></div>
+                </dl>
+              </div>
+              <a class="quest-button" href="fitness-app.html">START QUEST ↗</a>
+            </article>
+            <article class="quest-card quest-card--mint">
+              <div class="quest-card__header"><span class="quest-card__id">QUEST 02</span><span class="quest-card__status">ONGOING</span></div>
+              <div class="quest-card__content">
+                <div>
+                  <h3>AI Curiosity Experiment</h3>
+                  <p>Investigation on AI models' possible human traits, specifically curiosity.</p>
+                </div>
+                <dl class="quest-card__meta">
+                  <div><dt>ROLE</dt><dd>INVESTIGATOR</dd></div>
+                  <div><dt>REWARD</dt><dd>XP +70</dd></div>
+                </dl>
+              </div>
+              <a class="quest-button" href="ai-curiosity-experiment.html">START QUEST ↗</a>
+            </article>
+            <article class="quest-card quest-card--gold">
+              <div class="quest-card__header"><span class="quest-card__id">QUEST 03</span><span class="quest-card__status">COMPLETE</span></div>
+              <div class="quest-card__content">
+                <div>
+                  <h3>GitHub README.md</h3>
+                  <p>Learn about my projects here!</p>
+                </div>
+                <dl class="quest-card__meta">
+                  <div><dt>ROLE</dt><dd>APPRENTICE</dd></div>
+                  <div><dt>REWARD</dt><dd>XP +10</dd></div>
+                </dl>
+              </div>
+              <a class="quest-button" href="https://github.com/the-lamb-mission/the-lamb-mission">START QUEST ↗</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="find-me" class="find-me" aria-labelledby="find-me-title">
+          <div class="section-header">
+            <p class="section-label">03 / CONTACT</p>
+            <h2 id="find-me-title">Find me!</h2>
+          </div>
+          <div class="find-me__summary">
+            <p class="profile-summary">I am active on LinkedIn and GitHub! Do be aware the Instagram page do not work, and it will be published soon.</p>
+            <br></br>
+            <p class="profile-summary">You can also find my CV here soon! It is still on progress, so keep in touch!</p>
+          </div>
+
+          <div class="find-me__actions">
+            <!-- Add your pixel flowerbud image at images/flowerbud.png. -->
+            <figure class="flowerbud-art">
+              <img src="images/flowerbud.png" alt="Pixelated flowerbud" />
+            </figure>
+
+            <!-- Replace these placeholder URLs with your own profiles and CV file. -->
+            <ul class="social-links" aria-label="Find me online">
+              <li><a class="social-button social-button--linkedin" href="https://www.linkedin.com/in/yan-ping-lam-workspace/" target="_blank" rel="noreferrer">LINKEDIN <span>↗</span></a></li>
+              <li><a class="social-button social-button--github" href="https://github.com/the-lamb-mission" target="_blank" rel="noreferrer">GITHUB <span>↗</span></a></li>
+              <li><a class="social-button social-button--instagram" href="https://www.instagram.com" target="_blank" rel="noreferrer">INSTAGRAM <span>↗</span></a></li>
+              <li><a class="social-button social-button--cv" href="assets/your-name-cv.pdf" target="_blank">DOWNLOAD CV <span>↗</span></a></li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer site-container">© <span id="footer-year"></span> Ian Lam / BUILT WITH PIXELS</footer>
+    </div>
+  </body>
+</html>
